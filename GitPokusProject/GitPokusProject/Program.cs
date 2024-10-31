@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿try
+{
+    int a = int.Parse(Console.ReadLine());
+    int b = 5 / a;
+}
+catch (FormatException)
+{
+    Console.WriteLine("Spatny format. Zadej cislo.");
+}
+catch (DivideByZeroException)
+{
+    Console.WriteLine("nemuzes zadat nulu");
+}
